@@ -12,7 +12,7 @@ folder_path = 'file_path'
 folder_names = ['folder_name_1', 'folder_name_2', 'folder_name_3', 'folder_name_4']
 
 #assign file type to folder name, must be on the same index
-folder_file_types = [['.pdf'], ['.jpg', '.jpeg', '.png', '.gif', '.bmp'], ['.mp4', '.mov', '.wav'], ['.mp3'], ['.exe', '.msi'], ['doc', 'docx', 'xls', 'xlsx']]
+folder_file_types = [['.pdf'], ['.jpg', '.jpeg', '.png', '.gif', '.bmp'], ['.mp4', '.mov', '.wav'], ['.mp3']]
 now = datetime.now()
 
 def create_folder():
@@ -49,7 +49,6 @@ def on_moved(event):
     move_files()
 
 if __name__ == "__main__":
-    
     with open(folder_path + "/python_log.txt", "a") as f:
         print(now.strftime("%d.%m.%Y, %H:%M:%S") + ': started', file=f)
 
